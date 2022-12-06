@@ -2,7 +2,7 @@
 This project is node.js back-end code for a customer relationship management application that can create users and tickets as well as manage them.
 
 
-Features
+#Features
 Account creation
 
 When you create a new user (customer or engineeer), an account verification link will be sent to e-mail address provided.
@@ -21,7 +21,7 @@ Users can get all the tickets connected to their account.
 Ticket details can be updated only by related parties.
 Ticket Engineer can only be reassigned by the admin
 
-Dependencies
+#Dependencies
 npm modules
 express
 mongoose
@@ -32,27 +32,27 @@ bcryptjs
 REST API paths
 User creation
 
-Sign-up
+#Sign-up
 POST /crm/api/v2/auth/signup
 Register user with name, userId, email, password and user type.
 
 
-Sign-in
+#Sign-in
 POST /crm/api/v2/auth/signin
 User Sign-in using userId and password.
 
 
-Account verification
+#Account verification
 GET /crm/api/v2/auth/verifyemail/:token
 Account verification by using the link provided to the registered email address.
 
 
-Resend verification link
+#Resend verification link
 GET /crm/api/v2/auth/resendverificationemail/:token
 Resend the verificaion link to email in case the link is not received or has expired.
 
 
-User operations
+#User operations
 
 Get all users (Query params userType and userStatus supported)
 GET /crm/api/v2/users
@@ -79,7 +79,7 @@ PUT /crm/api/v2/users/resetpassword/:token
 Updating user password by using the link provided to the registered email address.
 
 
-Ticket creation and operations
+#Ticket creation and operations
 
 Create new ticket
 POST /crm/api/v2/tickets/
